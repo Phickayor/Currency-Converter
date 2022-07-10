@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Currency Converter</title>
+</head>
+<body>
+<style type="text/css">
+body{
+	background:black;
+	color:white;
+	text-align:center;
+}
+h1{
+	text-align:center;
+	font-family:sans-serif;
+	font-size:50px;
+}
+h3{
+	font-size:30px;
+}
+label{
+	font-family:georgia;
+}
+input{
+	width:100%;
+	border-radius:30px;
+	height:40px;
+}
+input:hover{
+	color:white;
+	background:black;
+}
+button{
+	border-radius:30px;
+	width:50%;
+	height:30px;
+	margin-top:10px;
+}
+button:hover{
+	color:white;
+	background:black;
+}
+#color{
+	color:white;
+}
+</style>
+<h1>Currency Converter</h1>
+<h3>You are Converting<br></h3><label>From:</label>
+<div>
+<select id="select1"></select>
+</div>
+<label>To:</label><div>
+<select id="select2"></select>
+</div>
+<label>Amount</label>
+<input type="number" id="amount" placeholder="How much do you want to convert" >
+<button id ="btn">Convert</button>
+<div id="output"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript" src="currency_converter.js"></script>
+</body>
+</html>
